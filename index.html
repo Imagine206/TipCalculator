@@ -15,7 +15,7 @@
             <div class="calc-content">
                 <div class="cost-container">
                     <h2>What is the Cost?</h2>
-                    <input type="number" id="cost-input" placeholder="$0.00">   
+                    <input type="number" id="cost-input" placeholder="$0.00">
                 </div>
                 <div class="tip-container">
                     <h2>Tip</h2>
@@ -26,7 +26,7 @@
                         <p>How many people?</p>
                         <div class="count-content">
                             <button class="decreament-count" id="decreament-count">-</button>
-                            <p class="persons-count" id="persons-count">1</p>
+                            <p class="persons-count" id="persons-count">0</p>
                             <button class="increase-count" id="increase-count">+</button>
                         </div>
                         <button class="calculateBtn" id="calculateBtn">Calculate</button>
@@ -37,9 +37,13 @@
     </main>
     <div class="showModalTotal" id="showModalTotal">
         <div class="total-count">
-            <div>
-            <p>Your Total is...</p>
-            <p id="total" class="total">$30</p>
+            <div class="costContent">
+                <p>Total cost:</p>
+                <p id="costOutput">$35</p>
+            </div>
+            <div class="tipContent">
+                <p>Tip amount</p>
+                <p id="tipOutput">3.5</p>
             </div>
         </div>
     </div>
